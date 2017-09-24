@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>趣游</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/buttons.css">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./layui/css/layui.css">
+	<link rel="stylesheet" href="./css/layer.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<script type="text/javascript" src='js/jquery-1.11.2.min.js'></script>
+	<script type="text/javascript" src='js/bootstrap.min.js'></script>
+	<script type="text/javascript" src='js/buttons.js'></script>
+	<script type="text/javascript" src='layui/layui.js'></script>
+	<script type="text/javascript" src='js/layer/layer.js'></script>
+</head>
+<body>
+<!--头部-->
+<div class="top">
+	<span class='left'><span>趣游</span>日本目的地旅行</span>
+	<span class='right'>专注日本旅游25年</span>		
+</div>
+<!--轮播图-->
+<div class='nav'>
+	<div class='login'>
+		<h2 align="center">账户登录</h2>
+		<input type="text"  class="form-control" placeholder='用户名'>
+		<input type="password"  class="form-control" placeholder='密码'>
+		<input type="text"  class="form-control" placeholder='验证码'>
+		<img src="./img/captcha.png" style="width:110px">
+			<span class='remember'><input type="checkbox" style="height:0px; "name="">&nbsp;记住我</span>
+		
+		<button class="button  button-glow button-primary button-rounded">登陆</button>
+	</div>
+	<div class="layui-carousel" id="test1">
+	  <div carousel-item>
+	    <div><img src="./img/1.jpg"></div>
+	    <div><img src="./img/2.jpg"></div>
+	    <div><img src="./img/3.jpg"></div>
+	    <div><img src="./img/4.jpg"></div>
+	    <div><img src="./img/5.jpg"></div>
+	  </div>
+	</div>
+</div>	
+<ul class='sort'>
+	<li><img src="img/gihub.png"><br>日本滑雪</li>
+	<li><img src="img/gihub.png"><br>日本温泉</li>
+	<li><img src="img/gihub.png"><br>多日游</li>
+	<li><img src="img/gihub.png"><br>一日游</li>
+	<li><img src="img/gihub.png"><br>票券/交通</li>
+	<li><img src="img/gihub.png"><br>景点门票</li>
+	<li><img src="img/gihub.png"><br>定制旅游</li>
+</ul>
+<div class='major'>
+	<h1>业务优势</h1>
+	<ul>
+		<li><button class='button button-primary button-jumbo'>专注日本</button></li>
+		<li><button class='button button-primary button-jumbo'>专注B2B</button></li>
+		<li><img src="img/gihub.png"><span>日本各城市出发的日游,<br>多日游,主题游<br>产品的集合。</span></li>
+		<li><img src="img/gihub.png"><span>日本各城市出发的日游,<br>多日游,主题游<br>产品的集合。</span></li>
+		<li><img src="img/gihub.png"><span>日本各城市出发的日游,<br>多日游,主题游<br>产品的集合。</span></li>
+		<li><img src="img/gihub.png"><span>日本各城市出发的日游,<br>多日游,主题游<br>产品的集合。</span></li>
+		<li><img src="img/gihub.png"><span>日本各城市出发的日游,<br>多日游,主题游<br>产品的集合。</span></li>
+		<li><img src="img/gihub.png"><span>日本各城市出发的日游,<br>多日游,主题游<br>产品的集合。</span></li>
+	</ul>
+</div>
+<div class='buttom'>
+	<h1>同业账号登录流程</h1>
+	<ul>
+		<li>
+			<h2><i class='fa fa-flag'>&nbsp;联系商拓</i></h2>
+			<span>
+				王Mr 135-0119-8086 QQ 2355321475<br>
+				杨Mr 136-2128-0102 QQ 2355321471
+			</span>
+		</li>
+		<li>
+			<h2><i class='fa fa-flag'>&nbsp;设置用户名</i></h2>
+			<span>
+				公司电话 10-6462-0081<br>
+				公司邮箱 chinapak@btg-chinapak.com
+			</span>
+		</li>
+	</ul>	
+</div>
+<div class='footer'>
+	<ul>
+		<li><a href="#">趣游旅行</a></li>
+		<li><a href="#">服务中心</a></li>
+		<li><a href="#">联系我们</a></li>
+		<li><a href="#">法律声明</a></li>
+		<li>Copyright © 1999-2017京ICP证09002463号</li>
+	</ul>
+</div>
+
+
+</body>
+</html>
+<script type="text/javascript">
+layui.use('layer', function(){
+  var layer = layui.layer;
+});              
+layui.use('carousel', function(){
+  var carousel = layui.carousel;
+  //建造实例
+  carousel.render({
+    elem: '#test1',
+    width: '100%', //设置容器宽度
+    height:'100%',
+    arrow: 'none',//始终不显示箭头
+    //,anim: 'updown' //切换动画方式
+    indicator:'none',
+  });
+});      
+</script>
