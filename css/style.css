@@ -10,20 +10,17 @@ a:link,a:visited,a:link,a:active{
 	background-color:white;
 	padding:20px 50px;
 }
-.top .left span{
-	margin-right:10px;
-	font-weight:bold;
-	display: inline;
-	font-size:30px;
+.top .left img{
+	width: 80px;
 }
 .top .left{
-	font-size:20px;
+	font-size:23px;
 }
 .top .right{
 	margin-top:10px;
 	float:right;
 	color: #737272;
-	font-size: 14px;
+	font-size: 16px;
 }
 .nav{
 	height: 520px;
@@ -73,8 +70,10 @@ a:link,a:visited,a:link,a:active{
 	overflow: hidden;
 }
 .sort li{
+	font-size: 15px;
+	font-weight: bold;
 	float: left;
-	padding:25px 50px;
+	padding:10px 50px;
 	width: 192px;
 	height: 100%;
 	border-right:1px solid #C5C4C4;
@@ -129,8 +128,8 @@ a:link,a:visited,a:link,a:active{
 }
 .buttom{
 	padding: 30px;
-	background: url('../img/background.jpg') no-repeat 150px ;
-	background: #94C7D3;
+	background: url('../img/1_35.jpg') no-repeat;
+	background-repeat:no-repeat; background-size:100% 100%;-moz-background-size:100% 100%;
 }
 .buttom h1{
 	letter-spacing:10px;
@@ -150,7 +149,7 @@ a:link,a:visited,a:link,a:active{
 .buttom ul li:last-of-type{
 	float: right;
 }
-.buttom ul li h2{
+.buttom ul li div{
 	text-align: center;
 	margin:30px 0px;
 	font-size: 22px;
@@ -158,13 +157,12 @@ a:link,a:visited,a:link,a:active{
 	font-weight:bold;
 }
 .buttom ul li span{
-	line-height: 30px;
+	line-height: 35px;
 	font-size:16px;
 }
 .footer{
-	margin: 20px 0px;
+	margin:20px 0px;
 	border-top: 1px solid #CDC9C9;
-	height: 50px;
 	color: #CDC9C9;
 }
 .footer ul li{
