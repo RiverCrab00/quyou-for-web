@@ -162,9 +162,9 @@ a:link,a:visited,a:link,a:active{
 	font-size:16px;
 }
 .footer{
-	margin:20px 0px;
+	margin:margin:20px 0px 0px 0px;
 	border-top: 1px solid #CDC9C9;
-	color: #CDC9C9;
+	color: #C1C0C0;
 }
 .footer ul li{
 	float: left;
