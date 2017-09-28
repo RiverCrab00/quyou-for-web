@@ -6,6 +6,10 @@
 	<link rel="stylesheet" type="text/css" href="css/detail_style.css">
 	<link rel="stylesheet" type="text/css" href="css/buttons.css">
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<script type="text/javascript" src='js/jquery-1.11.2.min.js'></script>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<script type="text/javascript" src='./js/buttons.js'></script>
+	<script type="text/javascript" src='js/layer/layer.js'></script>
 </head>
 <body>
 <!--头部-->
@@ -25,12 +29,17 @@
 <div class='section'>
 	<span><a href="#">我的订单</a>&emsp;|&emsp;<a href="#">账户管理</a></span>
 </div>
+  
 <!--主体-->
 <div class='content'>
 	<ul>
 		<li><h2>日本&nbsp;|&nbsp;主题旅游</h2></li>
 		<li>
-			<div><img src="img/2_03.jpg"><p>日本滑雪<span class="arrow">▽</span></p></div>
+			<div><img src="img/2_03.jpg">
+				<p>日本滑雪
+					<span class="arrow">▽</span>
+				</p>
+			</div>
 			<div><img src="img/2_05.jpg"><p>定制旅游<span class="arrow">▽</span></p></div>
 			<div><img src="img/2_07.jpg"><p>新干线套餐<span class="arrow">▽</span></p></div>
 		</li>
@@ -56,3 +65,32 @@
 
 </body>
 </html>
+<script type="text/javascript">
+$('.arrow').click(function(){
+	var that=$(this);
+	if(that.text()=='▽'){
+		$(this).text('◢');
+		var  top=$(this).offset().top-$(window).scrollTop()+17;
+		var  left=$(this).offset().left+17;
+		var  content="<ul class='xia'><li>东京</li><li>大阪</li><li>富士山</li></ul>";
+		layer.open({
+			  type: 1,
+			  closeBtn: 0, //不显示关闭按钮
+			  title: false, //不显示标题
+			  offset: [top, left],
+			  anim: 3,
+			  fixed:false,
+			  shade: 0.1,//其他区域不变色
+			  shadeClose: true, //开启遮罩关闭
+			  content: content,
+			  end:function(){
+			  	that.click();
+			  }
+		});
+	}else{
+		that.text('▽');
+	}
+	
+})
+	
+</script>

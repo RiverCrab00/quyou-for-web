@@ -1,7 +1,7 @@
 ul,li{
 	list-style:none;
 }
-a:link,a:visited,a:link,a:active{
+a:link,a:visited,a:hover,a:active{
 	text-decoration:none;
 }
 .top{
@@ -61,9 +61,13 @@ a:link,a:visited,a:link,a:active{
 	font-size: 16px;
 	margin-right: 45px;
 }
-.section span a:link,a:visited,a:link,a:active{
+.section span a:link,.section span a:visited{
 	color: white;
 	text-decoration:none;
+}
+.xia ul,li{
+	margin: 0px;
+	padding: 0px;
 }
 .content{
 	margin-bottom: 60px;
@@ -86,11 +90,23 @@ a:link,a:visited,a:link,a:active{
 	border: 1px solid #0099cc;
 	font-size:16px;
 }
+.xia{
+	margin:0px;
+	padding: 0px;
+	width: 100px;
+	border-radius: 10px;
+}
+.xia li{
+	margin:10px 0px;
+	padding-left:5px;
+	font-size: 16px;
+}
 .content ul li div img{
 	width: 120px;
 	height: 120px;
 }
 .content ul li div p .arrow{
+	cursor:pointer;
 	font-size: 17px;
 	color: #0099cc;
 }
@@ -99,7 +115,7 @@ a:link,a:visited,a:link,a:active{
 	border-top: 1px solid #CDC9C9;
 	color: #C1C0C0;
 }
-.footer a:link,a:visited,a:link,a:active{
+.footer a:link,.footer a:visited{
 	text-decoration: none;
 	color: #C1C0C0;
 }
