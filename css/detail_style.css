@@ -37,6 +37,8 @@ a:link,a:visited,a:hover,a:active{
 	padding: 0px;
 }
 .top .right div input{
+	padding-left:10px;
+	outline:none;
 	border: none;
 	font-size: 18px;
 	line-height: 30px;
