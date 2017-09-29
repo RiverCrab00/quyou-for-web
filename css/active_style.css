@@ -1,5 +1,8 @@
+/*头部样式*/
 ul,li{
 	list-style:none;
+	margin: 0px;
+	padding: 0px;
 }
 a:link,a:visited,a:hover,a:active{
 	text-decoration:none;
@@ -68,50 +71,78 @@ a:link,a:visited,a:hover,a:active{
 	color: white;
 	text-decoration:none;
 }
-.xia ul,li{
-	margin: 0px;
-	padding: 0px;
+/*活动*/
+.active{
+	padding: 50px;
 }
-.content{
-	margin-bottom: 60px;
+.active .crumbs{
+	font-size: 16px;
+	padding-bottom: 5px;
+	color: #606060;
+	font-weight: bold;
+	border-bottom:1px solid #808080;
 }
-.content ul li{
-	margin: 30px 0px;
-	overflow: hidden;
-}
-.content ul li h2{
-	display:inline-block;
-	padding-bottom: 10px;
-	border-bottom:1px solid #A3A3A3;
-}
-.content ul li div{
-	float: left;
-	width: 170px;
-	height: 150px;
-	text-align: center;
-	margin-right:50px;
-	border: 1px solid #0099cc;
-	font-size:16px;
-}
-.xia{
-	margin:0px;
-	padding: 0px;
-	width: 100px;
-	border-radius: 10px;
-}
-.xia li{
-	margin:10px 0px;
-	padding-left:5px;
+.active .query{
+	margin: 50px 0px;
 	font-size: 16px;
 }
-.content ul li div img{
-	width: 120px;
-	height: 120px;
+.active .query input{
+	padding: 0px 5px;
+	height: 36px;
+	width: 150px;
 }
-.content ul li div p .arrow{
-	cursor:pointer;
-	font-size: 17px;
+.active .query input:nth-child(2){
+	width: 180px;
+}
+.active .query button{
+	letter-spacing: 2px;
+	font-size: 20px;
+	height: 38px;
+}
+
+.active ul li{
+	padding: 15px;
+	margin-bottom: 20px;
+	border: 1px solid #0099cc;
+	height: 130px;
+	width: 850px;
+	overflow: hidden;
+}
+.active ul li img{
+	margin: auto 0px;
+	width: 150px;
+	height: 100px;
+	float: left;
+}
+.active ul li .detail{
+	float: left;
+	margin-left: 20px;
+}
+.active ul li .detail h4{
+	margin: 0px;
 	color: #0099cc;
+	letter-spacing:2px;
+	font-size: 20px;
+}
+.active ul li .detail div{
+	margin-top: 15px;
+}
+.active ul li .detail div{
+	font-size:12px;
+}
+.active ul li .detail div span{
+	font-weight: bold;
+	font-size: 14px;
+}
+.active .price{
+	font-size: 18px;
+	padding: 5px;
+	color: white;
+	float: right;
+	margin:30px 0px;
+	width: 85px;
+	height: 35px;
+	background: #0099cc;
 }
 /*尾部end*/
 .footer{

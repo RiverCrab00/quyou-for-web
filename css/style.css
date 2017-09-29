@@ -68,13 +68,16 @@ a:link,a:visited,a:link,a:active{
 .sort{
 	border-bottom: 2px solid #E0DFDF;
 	height: 125px;
+	text-align: center;
+}
+.sort ul{
 	overflow: hidden;
 }
 .sort li{
 	font-size: 15px;
 	font-weight: bold;
 	float: left;
-	padding:10px 50px;
+	padding:16px 50px;
 	width: 192px;
 	height: 100%;
 	border-right:1px solid #C5C4C4;
