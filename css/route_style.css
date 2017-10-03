@@ -1,0 +1,85 @@
+ul,li{
+	list-style:none;
+	margin: 0px;
+	padding: 0px;
+}
+a:link,a:visited,a:hover,a:active{
+	text-decoration:none;
+}
+.top{
+	width: 100%;
+	height: 100px;
+	background-color:white;
+	padding:20px 50px;
+}
+.top .left img{
+	width: 80px;
+}
+.top .left{
+	font-size:23px;
+}
+.top .right{
+	margin-top:10px;
+	float:right;
+	width: 700px;
+	overflow: hidden;
+}
+.top .right span{
+	color: #737272;
+	display: inline-block;
+	height: 30px;
+	line-height: 40px;
+	font-size: 16px;
+	float: right;
+}
+.top .right div{
+	display: inline-block;
+	border: 2px solid #0099cc;
+	margin: 0px;
+	padding: 0px;
+}
+.top .right div input{
+	padding-left:10px;
+	outline:none;
+	border: none;
+	font-size: 18px;
+	line-height: 30px;
+	width: 400px;
+	height: 30px;
+	vertical-align:middle;
+	margin-bottom: 5px;
+}
+.top .right div button{
+	font-size: 18px;
+	height: 40px;
+	font-weight:bold;
+}
+/*ÎÒµÄ¶©µ¥*/
+.section{
+	height: 50px;
+	line-height: 50px;
+	background-color:#0099cc;
+}
+.section span{
+	float: right;
+	letter-spacing: 3px;
+	font-size: 16px;
+	margin-right: 45px;
+}
+.section span a:link,.section span a:visited{
+	color: white;
+	text-decoration:none;
+}
+.crumbs{
+	padding:50px;
+}
+.crumbs span{
+	font-size: 16px;
+	padding-bottom: 5px;
+	color: #606060;
+	font-weight: bold;
+	border-bottom:1px solid #808080;
+}
+.content{
+	background-color: #f0f0f0;
+}
