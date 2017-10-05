@@ -81,5 +81,26 @@ a:link,a:visited,a:hover,a:active{
 	border-bottom:1px solid #808080;
 }
 .content{
-	background-color: #f0f0f0;
+	padding: 0px 50px;
+	overflow: hidden;
+}
+.content ul{
+	width: 50%;
+	float: left;
+}
+.content ul li{
+	border: 1px solid yellow;
+	height: 300px;
+	padding: 5px;
+}
+.content ul li img{
+	height: 100%;
+	width: 100%;
+}
+.content div{
+	border: 1px solid black;
+	width: 50%;
+	height: 600px;
+	float:right;
+	padding: 5px;
 }
